@@ -1,0 +1,37 @@
+[
+  {
+    "model": "audioapi.inquiry",
+    "pk": 1,
+    "status": "TENTATIVE",
+    "user": 1,
+    "event_name": "CeCe Winans Tour Rehearsal",
+    "event_date": "2025-09-10",
+    "location": "Nashville, TN",
+    "message": "Looking to book production and monitor engineering support for upcoming tour rehearsals.",
+    "created_at": "2025-08-01T10:00:00Z"
+    
+  },
+  {
+    "model": "audioapi.inquiry",
+    "pk": 2,
+    "status": "SIGNING",
+    "user": 1,
+    "event_name": "Church AV Upgrade Consultation",
+    "event_date": "2025-10-01",
+    "location": "Charlotte, NC",
+    "message": "Need a consult and potential AV system redesign for our worship space. Looking for Dante-based audio and lighting upgrades.",
+    "created_at": "2025-08-03T14:30:00Z"
+
+  },
+  {
+    "model": "audioapi.inquiry",
+    "pk": 3,
+    "status": "DEFINITE",
+    "user": 2,
+    "event_name": "Winter Jam FOH Engineering",
+    "event_date": "2026-01-15",
+    "location": "Atlanta, GA",
+    "message": "Booking FOH services and production oversight for the Winter Jam tour. Equipment includes DiGiCo Quantum and EAW systems.",
+    "created_at": "2025-08-05T09:15:00Z"
+  }
+]
