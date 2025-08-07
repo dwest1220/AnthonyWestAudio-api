@@ -27,9 +27,6 @@ class InquiryView(ViewSet):
 
         # return Response(serialized.data, status=status.HTTP_201_CREATED)
 
-        logger.info(f"InquiryView.create called by user: {request.user}")
-        print(f"DEBUG: InquiryView.create called with data {request.data}")
-
         try:
             inquiry = Inquiry.objects.create(
                 user=request.user,
@@ -41,13 +38,11 @@ class InquiryView(ViewSet):
             )
 
             serializer = InquirySerializer(inquiry)
-            print(f"DEBUG: Successfully created inquiry with ID: {inquiry.id}")
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         
         except KeyError as e:
-            return Response({'error': f'Missing required field: {str(e)}'})
+            return Response({'error': f'Missing required field: {str(e)}'}, status=status.HTTP_400_BAD_REQUEST)
         except Exception as e:
-            print(f"DEBUG: Error creating inquiry: {str(e)}")
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
         
     def list(self, request):
@@ -58,7 +53,7 @@ class InquiryView(ViewSet):
     def retrieve(self, request, pk=None):
 
         try:
-            inquiry = inquiry.objects.get(pk=pk, user=request.user)
+            inquiry = Inquiry.objects.get(pk=pk, user=request.user)
             serializer = InquirySerializer(inquiry)
             return Response(serializer.data)
         except Inquiry.DoesNotExist:
@@ -68,7 +63,19 @@ class InquiryView(ViewSet):
 
         try:
             inquiry = Inquiry.objects.get(pk=pk, user=request.user)
-            serializer = InquirySerializer(inquiry, data=request, partial=True)
+            serializer = InquirySerializer(inquiry, data=request.data, partial=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Inquiry.DoesNotExist:
+            return Response({'error': 'Inquiry not found'}, status=status.HTTP_404_NOT_FOUND)
+        
+    def partial_update(self, request, pk=None):
+
+        try:
+            inquiry = Inquiry.objects.get(pk=pk, user=request.user)
+            serializer = InquirySerializer(inquiry, data=request.data, partial=True)
             if serializer.is_valid():
                 serializer.save()
                 return Response(serializer.data)
