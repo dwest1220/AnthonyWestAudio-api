@@ -13,20 +13,6 @@ class InquiryView(ViewSet):
 
     def create(self, request):
 
-        # inquiry = Inquiry()
-        # inquiry.user = request.user
-        # inquiry.status = request.data['status']
-        # inquiry.event_name = request.data['event_name']
-        # inquiry.event_date = request.data['event_date']
-        # inquiry.location = request.data['location']
-        # inquiry.message = request.data['message']
-        # inquiry.created_at = request.data['created_at']
-        # inquiry.save()
-
-        # serialized = InquirySerializer(inquiry, many=False)
-
-        # return Response(serialized.data, status=status.HTTP_201_CREATED)
-
         try:
             inquiry = Inquiry.objects.create(
                 user=request.user,
@@ -34,6 +20,8 @@ class InquiryView(ViewSet):
                 event_name=request.data['event_name'],
                 event_date=request.data['event_date'],
                 location=request.data['location'],
+                phone=request.data['phone'],
+                email=request.data['email'],
                 message=request.data['message']
             )
 

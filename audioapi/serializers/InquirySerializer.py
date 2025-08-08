@@ -8,7 +8,7 @@ class InquirySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Inquiry
-        fields = ['id', 'status', 'user', 'event_name', 'event_date', 'location', 'message', 'created_at']
+        fields = ['id', 'status', 'user', 'event_name', 'event_date', 'location', 'message', 'phone', 'email', 'created_at']
     
     def validate_event_date(self, value):
         if value and value < datetime.date.today():

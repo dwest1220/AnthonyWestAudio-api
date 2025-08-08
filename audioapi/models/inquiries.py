@@ -19,5 +19,7 @@ class Inquiry(models.Model):
     event_date = models.DateField(null=True, blank=True)
     location = models.CharField(max_length=70)
     message = models.TextField()
+    phone = models.CharField(max_length=12)
+    email = models.CharField(max_length=70)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
