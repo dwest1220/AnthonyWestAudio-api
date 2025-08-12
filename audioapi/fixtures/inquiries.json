@@ -8,6 +8,8 @@
       "event_name": "CeCe Winans Tour Rehearsal",
       "event_date": "2025-09-10",
       "location": "Nashville, TN",
+      "phone": "123-123-1234",
+      "email": "fake@email.com",
       "message": "Looking to book production and monitor engineering support for upcoming tour rehearsals.",
       "created_at": "2025-08-01T10:00:00Z",
       "updated_at": "2025-08-01T10:00:00Z"
@@ -22,6 +24,8 @@
       "event_name": "Church AV Upgrade Consultation",
       "event_date": "2025-10-01",
       "location": "Charlotte, NC",
+      "phone": "123-123-1234",
+      "email": "fake@email.com",
       "message": "Need a consult and potential AV system redesign for our worship space. Looking for Dante-based audio and lighting upgrades.",
       "created_at": "2025-08-03T14:30:00Z",
       "updated_at": "2025-08-04T16:45:00Z"
@@ -36,6 +40,8 @@
       "event_name": "Winter Jam FOH Engineering",
       "event_date": "2026-01-15",
       "location": "Atlanta, GA",
+      "phone": "123-123-1234",
+      "email": "fake@email.com",
       "message": "Booking FOH services and production oversight for the Winter Jam tour. Equipment includes DiGiCo Quantum and EAW systems.",
       "created_at": "2025-08-05T09:15:00Z",
       "updated_at": "2025-08-05T09:15:00Z"
@@ -50,6 +56,8 @@
       "event_name": "Corporate Event Audio Setup",
       "event_date": "2025-12-15",
       "location": "Memphis, TN",
+      "phone": "123-123-1234",
+      "email": "fake@email.com",
       "message": "Audio production for corporate year-end event. Cancelled due to venue change.",
       "created_at": "2025-07-20T11:30:00Z",
       "updated_at": "2025-07-25T13:20:00Z"

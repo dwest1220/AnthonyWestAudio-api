@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "username": "david",
-      "password": "pbkdf2_sha256$600000$DGRArzWZ8oTg2OYZvkg9aY$MaUduWRWMi3ysRbUMk5LgHeYaMkbTPkZnN9jTzRCoOc=",
+      "password": "pbkdf2_sha256$1000000$TmnAKrSp10GfqSjQpD6Z8X$U2zBBZ0MZBzEcM38/N6lnWNuBXRHJipQbB8x+qNR2F8=",
       "email": "david@example.com",
       "is_superuser": true,
       "is_staff": true,
@@ -16,7 +16,7 @@
     "pk": 2,
     "fields": {
       "username": "anthony",
-      "password": "pbkdf2_sha256$600000$DGRArzWZ8oTg2OYZvkg9aY$MaUduWRWMi3ysRbUMk5LgHeYaMkbTPkZnN9jTzRCoOc=",
+      "password": "pbkdf2_sha256$1000000$TmnAKrSp10GfqSjQpD6Z8X$U2zBBZ0MZBzEcM38/N6lnWNuBXRHJipQbB8x+qNR2F8=",
       "email": "anthony@example.com",
       "is_superuser": false,
       "is_staff": false,
@@ -28,7 +28,7 @@
     "pk": 3,
     "fields": {
       "username": "traci",
-      "password": "pbkdf2_sha256$600000$DGRArzWZ8oTg2OYZvkg9aY$MaUduWRWMi3ysRbUMk5LgHeYaMkbTPkZnN9jTzRCoOc=",
+      "password": "pbkdf2_sha256$1000000$TmnAKrSp10GfqSjQpD6Z8X$U2zBBZ0MZBzEcM38/N6lnWNuBXRHJipQbB8x+qNR2F8=",
       "email": "traci@example.com",
       "is_superuser": false,
       "is_staff": false,
