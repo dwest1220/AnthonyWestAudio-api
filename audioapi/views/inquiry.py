@@ -12,7 +12,6 @@ logger = logging.getLogger(__name__)
 class InquiryView(ViewSet):
 
     def create(self, request):
-
         try:
             inquiry = Inquiry.objects.create(
                 user=request.user,
@@ -34,23 +33,30 @@ class InquiryView(ViewSet):
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
         
     def list(self, request):
-        inquiries = Inquiry.objects.all()
+        if request.user.is_staff:
+            inquiries = Inquiry.objects.all()
+        else:
+            inquiries = Inquiry.objects.filter(user=request.user)
         serializer = InquirySerializer(inquiries, many=True)
         return Response(serializer.data)
     
     def retrieve(self, request, pk=None):
-
         try:
-            inquiry = Inquiry.objects.get(pk=pk, user=request.user)
+            if request.user.is_staff:
+                inquiry = Inquiry.objects.get(pk=pk)
+            else:
+                inquiry = Inquiry.objects.get(pk=pk, user=request.user)
             serializer = InquirySerializer(inquiry)
             return Response(serializer.data)
         except Inquiry.DoesNotExist:
             return Response({'error': 'Inquiry not found'}, status=status.HTTP_404_NOT_FOUND)
         
     def update(self, request, pk=None):
-
         try:
-            inquiry = Inquiry.objects.get(pk=pk, user=request.user)
+            if request.user.is_staff:
+                inquiry = Inquiry.objects.get(pk=pk)
+            else:
+                inquiry = Inquiry.objects.get(pk=pk, user=request.user)
             serializer = InquirySerializer(inquiry, data=request.data, partial=True)
             if serializer.is_valid():
                 serializer.save()
@@ -60,9 +66,11 @@ class InquiryView(ViewSet):
             return Response({'error': 'Inquiry not found'}, status=status.HTTP_404_NOT_FOUND)
         
     def partial_update(self, request, pk=None):
-
         try:
-            inquiry = Inquiry.objects.get(pk=pk, user=request.user)
+            if request.user.is_staff:
+                inquiry = Inquiry.objects.get(pk=pk)
+            else:
+                inquiry = Inquiry.objects.get(pk=pk, user=request.user)
             serializer = InquirySerializer(inquiry, data=request.data, partial=True)
             if serializer.is_valid():
                 serializer.save()
@@ -74,9 +82,11 @@ class InquiryView(ViewSet):
     def destroy(self, request, pk=None):
         """Delete an inquiry"""
         try:
-            inquiry = Inquiry.objects.get(pk=pk, user=request.user)
+            if request.user.is_staff:
+                inquiry = Inquiry.objects.get(pk=pk)
+            else:
+                inquiry = Inquiry.objects.get(pk=pk, user=request.user)
             inquiry.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
         except Inquiry.DoesNotExist:
             return Response({'error': 'Inquiry not found'}, status=status.HTTP_404_NOT_FOUND)
-    
