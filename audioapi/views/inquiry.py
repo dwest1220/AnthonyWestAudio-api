@@ -34,7 +34,7 @@ class InquiryView(ViewSet):
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
         
     def list(self, request):
-        inquiries = Inquiry.objects.filter(user=request.user)
+        inquiries = Inquiry.objects.all()
         serializer = InquirySerializer(inquiries, many=True)
         return Response(serializer.data)
     
