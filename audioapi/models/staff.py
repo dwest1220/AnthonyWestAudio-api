@@ -12,6 +12,8 @@ class Staff(models.Model):
     ]
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
     role = models.CharField(max_length=50, choices=ROLE_CHOICES)
     day_rate = models.DecimalField(max_digits=6, decimal_places=2)
     is_active = models.BooleanField(default=True)

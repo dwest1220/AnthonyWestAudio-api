@@ -8,7 +8,7 @@ class StaffSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Staff
-        fields = ['id', 'user', 'role', 'day_rate', 'is_active', 'bio', 'created_at', 'full_name']
+        fields = ['id', 'user', 'first_name', 'last_name', 'role', 'day_rate', 'is_active', 'bio', 'created_at', 'full_name']
     
     def get_full_name(self, obj):
         return f"{obj.user.first_name} {obj.user.last_name}".strip() or obj.user.username

@@ -4,6 +4,8 @@
     "pk": 1,
     "fields": {
       "user": 2,
+      "first_name": "Anthony",
+      "last_name": "West",
       "role": "FOH_ENGINEER",
       "day_rate": "900.00",
       "is_active": true,
@@ -16,6 +18,8 @@
     "pk": 2,
     "fields": {
       "user": 1,
+      "first_name": "David",
+      "last_name": "West",
       "role": "MONITOR_ENGINEER",
       "day_rate": "500.00",
       "is_active": true,
