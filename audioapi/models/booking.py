@@ -11,7 +11,7 @@ class Booking(models.Model):
         ('CANCELLED', 'Cancelled'),
     ]
     
-    inquiry = models.OneToOneField(Inquiry, on_delete=models.CASCADE)
+    inquiry = models.ForeignKey(Inquiry, on_delete=models.CASCADE)
     booking_staff = models.ManyToManyField(Staff, through='BookingStaff')
     booking_date = models.DateTimeField()
     end_date = models.DateTimeField(null=True, blank=True)

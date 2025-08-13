@@ -14,7 +14,7 @@ class BookingStaffView(ViewSet):
             staff = Staff.objects.get(id=request.data['staff_id'])
             
             booking_staff = BookingStaff.objects.create(
-                booking_id=request.data['booking'],
+                booking_id=request.data['booking_id'],
                 staff=staff,
                 rate_type=request.data.get('rate_type', 'FULL_DAY'),
                 day_rate_at_booking=request.data.get('day_rate_at_booking', staff.day_rate),

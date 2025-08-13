@@ -12,7 +12,7 @@ class BookingView(ViewSet):
     def create(self, request):
         try:
             booking = Booking.objects.create(
-                inquiry_id=request.data['inquiry'],
+                inquiry_id=request.data['inquiry_id'],
                 booking_date=request.data['booking_date'],
                 end_date=request.data.get('end_date'),
                 status=request.data.get('status', 'CONFIRMED'),
