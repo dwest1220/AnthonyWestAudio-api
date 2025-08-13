@@ -8,6 +8,9 @@ from audioapi.views import *
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r"inquiries", InquiryView, basename="inquiry")
 router.register(r"users", UserView, basename="user")
+router.register(r'staff', StaffView, basename='staff')
+router.register(r'bookings', BookingView, basename='booking')
+router.register(r'booking-staff', BookingStaffView, basename='booking-staff')
 
 urlpatterns = [
     path('auth/login/', login_view, name='login'),

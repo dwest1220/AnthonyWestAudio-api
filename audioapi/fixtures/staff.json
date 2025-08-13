@@ -10,5 +10,17 @@
       "bio": "Lead Audio Engineer & CEO with over 20 years of experience serving artists around the world. Anthony has worked with major touring acts, corporate events, and houses of worship, delivering exceptional audio experiences across diverse venues and audiences. His expertise spans live sound engineering, production management, and technical consulting, making him a trusted partner for artists and event organizers seeking professional audio solutions.",
       "created_at": "2025-01-13T12:00:00Z"
     }
+    },
+    {
+    "model": "audioapi.staff",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "role": "MONITOR_ENGINEER",
+      "day_rate": "500.00",
+      "is_active": true,
+      "bio": "Lead Monitor Engineer",
+      "created_at": "2025-01-13T12:00:00Z"
+    }
     }
 ]    
