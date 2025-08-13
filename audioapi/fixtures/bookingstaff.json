@@ -1,0 +1,16 @@
+[
+     {
+    "model": "audioapi.bookingstaff",
+    "pk": 1,
+    "fields": {
+      "booking": 1,
+      "staff": 1,
+      "rate_type": "FULL_DAY",
+      "day_rate_at_booking": "900.00",
+      "custom_rate": null,
+      "days_worked": 1,
+      "notes": "Lead engineer for corporate event - handling FOH and coordination",
+      "assigned_at": "2025-01-13T12:30:00Z"
+    }
+  }
+]
