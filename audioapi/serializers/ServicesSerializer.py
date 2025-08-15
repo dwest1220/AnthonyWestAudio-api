@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from audioapi.models import Staff
+from audioapi.models import Service
 
 class ServiceSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Staff
+        model = Service
         fields = ['id', 'name', 'description', 'price']

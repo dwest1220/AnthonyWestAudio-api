@@ -13,7 +13,7 @@ class ServiceView(ViewSet):
         try:
             service = Service.objects.create(
                 name=request.data['name'],
-                descrition=request.data['description'],
+                description=request.data['description'],
                 price=request.data['price']
             )
 
@@ -29,7 +29,7 @@ class ServiceView(ViewSet):
         try:
             service = Service.objects.all()
             
-            serializer = ServiceSerializer(service)
+            serializer = ServiceSerializer(service, many=True)
             return Response(serializer.data)
         
         except Exception as e:
