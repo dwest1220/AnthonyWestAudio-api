@@ -1,0 +1,56 @@
+[
+  {
+    "model": "audioapi.service",
+    "pk": 1,
+    "fields": {
+      "name": "Live Audio Engineering",
+      "description": "FOH & Monitor Engineering for concerts, tours, and events.",
+      "price": 0.00
+    }
+  },
+  {
+    "model": "audioapi.service",
+    "pk": 2,
+    "fields": {
+      "name": "Production Management",
+      "description": "Tour & event management, logistics, and team coordination.",
+      "price": 0.00
+    }
+  },
+  {
+    "model": "audioapi.service",
+    "pk": 3,
+    "fields": {
+      "name": "Church AV Integration",
+      "description": "Design & install audio, video, and lighting systems.",
+      "price": 0.00
+    }
+  },
+  {
+    "model": "audioapi.service",
+    "pk": 4,
+    "fields": {
+      "name": "Media & Creative Direction",
+      "description": "Service production, video, graphic design, and set design.",
+      "price": 0.00
+    }
+  },
+  {
+    "model": "audioapi.service",
+    "pk": 5,
+    "fields": {
+      "name": "Creative & Post-Production",
+      "description": "Video editing, audio post, and worship media.",
+      "price": 0.00
+    }
+  },
+  {
+    "model": "audioapi.service",
+    "pk": 6,
+    "fields": {
+      "name": "Technical Consulting & Training",
+      "description": "System evaluations, workflow optimization, team training.",
+      "price": 0.00
+    }
+  }
+]

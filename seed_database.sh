@@ -10,4 +10,5 @@ python3 manage.py loaddata inquiries
 python3 manage.py loaddata staff
 python3 manage.py loaddata booking
 python3 manage.py loaddata bookingstaff
+python3 manage.py loaddate service
 
