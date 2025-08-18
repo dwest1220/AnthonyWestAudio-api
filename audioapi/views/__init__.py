@@ -4,3 +4,4 @@ from .booking import BookingView
 from .bookingstaff import BookingStaffView
 from .staff import StaffView
 from .register import register_view
+from .services import ServiceView

@@ -3,3 +3,4 @@ from .InquirySerializer import InquirySerializer
 from .StaffSerializer import StaffSerializer
 from .UserSerializer import UserSerializer
 from .BookingStaffSerializer import BookingStaffSerializer
+from .ServicesSerializer import ServiceSerializer

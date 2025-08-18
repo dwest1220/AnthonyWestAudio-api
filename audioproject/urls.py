@@ -11,6 +11,7 @@ router.register(r"users", UserView, basename="user")
 router.register(r'staff', StaffView, basename='staff')
 router.register(r'bookings', BookingView, basename='booking')
 router.register(r'booking-staff', BookingStaffView, basename='booking-staff')
+router.register(r'services', ServiceView, basename='service')
 
 urlpatterns = [
     path('auth/register/', register_view, name='register'),
