@@ -5,7 +5,8 @@
     "fields": {
       "name": "Live Audio Engineering",
       "description": "FOH & Monitor Engineering for concerts, tours, and events.",
-      "price": 0.00
+      "price": 0.00,
+      "details": "Front of House (FOH) and Monitor Engineering\nTouring support for artists and large-scale events\nExpertise with high-end systems like Meyer Sound, EAW, Dante networks, and wireless systems\nOperation and programming on industry-leading consoles (DiGiCo, Yamaha Rivage, A&H dLive, Avid S6L)"
     }
   },
   {
@@ -14,7 +15,8 @@
     "fields": {
       "name": "Production Management",
       "description": "Tour & event management, logistics, and team coordination.",
-      "price": 0.00
+      "price": 0.00,
+      "details": "Full event production planning and execution\nTour management for worship artists and large events (Winter Jam, Stellar Awards, NASCAR shows)\nTeam coordination, scheduling, and logistics"
     }
   },
   {
@@ -23,7 +25,8 @@
     "fields": {
       "name": "Church AV Integration",
       "description": "Design & install audio, video, and lighting systems.",
-      "price": 0.00
+      "price": 0.00,
+      "details": "Design, install, and project manage audio, video, and lighting systems\nSpecial focus on worship environments and multisite expansion\nVolunteer team training and systems optimization"
     }
   },
   {
@@ -32,7 +35,8 @@
     "fields": {
       "name": "Media & Creative Direction",
       "description": "Service production, video, graphic design, and set design.",
-      "price": 0.00
+      "price": 0.00,
+      "details": "Weekly worship service production: audio, lighting, video, set design\nContent creation: sermon bumpers, testimonies, announcement videos\nGraphic design for services and events"
     }
   },
   {
@@ -41,7 +45,8 @@
     "fields": {
       "name": "Creative & Post-Production",
       "description": "Video editing, audio post, and worship media.",
-      "price": 0.00
+      "price": 0.00,
+      "details": "Video editing (Final Cut Pro X, Adobe After Effects)\nAudio post-production (Adobe Audition)\nGraphic design (Photoshop)\nWorship lyric/media management (ProPresenter)"
     }
   },
   {
@@ -50,7 +55,8 @@
     "fields": {
       "name": "Technical Consulting & Training",
       "description": "System evaluations, workflow optimization, team training.",
-      "price": 0.00
+      "price": 0.00,
+      "details": "System evaluations and upgrades\nOn-site and remote training for technical staff and volunteers\nWorkflow optimization for churches and live production teams"
     }
   }
 ]

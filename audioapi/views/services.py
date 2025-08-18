@@ -14,6 +14,7 @@ class ServiceView(ViewSet):
             service = Service.objects.create(
                 name=request.data['name'],
                 description=request.data['description'],
+                details=request.data['details'],
                 price=request.data['price']
             )
 
