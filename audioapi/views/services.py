@@ -15,6 +15,7 @@ class ServiceView(ViewSet):
                 name=request.data['name'],
                 description=request.data['description'],
                 details=request.data['details'],
+                icon=request.data['icon'],
                 price=request.data['price']
             )
 
