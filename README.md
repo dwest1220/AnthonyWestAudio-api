@@ -227,7 +227,7 @@ DATABASE_URL=postgresql://...
 
 ## 👨‍💻 Developer
 
-Built by [Your Name] as a capstone project for Nashville Software School's Full-Stack Engineering program.
+Built by David West as a capstone project for Nashville Software School's Full-Stack Engineering program.
 
 **LinkedIn**: https://www.linkedin.com/in/david-west-a205a8274/
 **GitHub**: https://github.com/dwest1220
