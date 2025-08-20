@@ -12,6 +12,6 @@ class BookingSerializer(serializers.ModelSerializer):
         model = Booking
         fields = [
             'id', 'inquiry', 'inquiry_title', 'booking_date', 'end_date', 
-            'status', 'total_estimated_cost', 'notes', 'created_at',
+            'status', 'total_estimated_cost', 'notes', 'contact_phone', 'contact_email', 'created_at',
             'booking_staff_assignments'
         ]
