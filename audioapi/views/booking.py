@@ -16,6 +16,8 @@ class BookingView(ViewSet):
                 booking_date=request.data['booking_date'],
                 end_date=request.data.get('end_date'),
                 status=request.data.get('status', 'CONFIRMED'),
+                contact_phone=request.data.get('contact_phone'),
+                contact_email=request.data.get('contact_email'),
                 total_estimated_cost=request.data.get('total_estimated_cost'),
                 notes=request.data.get('notes', '')
             )
